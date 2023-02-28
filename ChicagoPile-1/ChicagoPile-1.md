@@ -1,5 +1,5 @@
 # 1 Historical reference
-
+git init <project_dir>
 # 2 Technical reference
 
 ## 2.1 Circulation diagram
