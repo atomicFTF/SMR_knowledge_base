@@ -102,7 +102,30 @@ git merge origin/master
 git pull origin master
 ```
 then you are ready to push master to the upstream via `git push`  
+There is another way to integrate your branch with another - [rebasing](https://git-scm.com/book/en/v2/Git-Branching-Rebasing).  
+Say you get the following commit history: ![](./pic/rebase1.PNG) 
+and you want to incorporate chenges in your `experiment` branch into `master`. With merging you'd go as
+```bash
+git checkout master
+git merge experiment
+``` 
+to merge the `experiment` into `master` getting additional _merge_-commit and loop-like history as ![](./pic/rebase2.PNG)
+With `rebasing` this is another idea: you can take the patch of the change that was introduced in C4 and reapply it on top of C3. In Git, exactly this is called `rebasing`. With the `rebase` command, you can take all the changes that were committed on one branch and replay them on a different branch. For this example, you would check out the experiment branch, and then rebase it onto the master branch as follows:
+```bash
+git checkout experiment
+git rebase master
+```
+resulting in pretty linear history of changes
+![](./pic/rebase3.PNG)
+Having this you can go back to the master branch and do a fast-forward merge:
+```bash
+git checkout master
+git merge experiment
+```
+Finally after `fast-forward` you'll get the desired contribution result
+![](./pic/rebase4.PNG)
 ***
 For advanced info on collaborating using git branching workflow with extended examples visit 
 - https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches
 - https://git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project
+- https://git-scm.com/book/en/v2/Git-Branching-Rebasing 
