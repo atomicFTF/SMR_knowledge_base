@@ -1,3 +1,5 @@
+[04005004147su.pdf](https://github.com/atomicFTF/SMR_knowledge_base/files/10865159/04005004147su.pdf)
+[The First Reactor.pdf](https://github.com/atomicFTF/SMR_knowledge_base/files/10865161/The.First.Reactor.pdf)
 # 1 Historical reference
 git init <project_dir>
 # 2 Technical reference
