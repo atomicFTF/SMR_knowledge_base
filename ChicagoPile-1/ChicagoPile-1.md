@@ -2,6 +2,7 @@
 [The First Reactor.pdf](https://github.com/atomicFTF/SMR_knowledge_base/files/10865161/The.First.Reactor.pdf)
 # 1 Historical reference
 git init <project_dir>
+
 # 2 Technical reference
 
 ## 2.1 Circulation diagram
@@ -21,6 +22,7 @@ The first evaluations of the critical dimensions of the pile were pessimistic. A
   The envelope was hung leaving one side open; they placed in the center of the room a first
 circular layer of graphite bricks. This layer and the other layers of the stack were surrounded of a wooden frame. Every other layer contained
 uranium. By proceeding in this way layer by layer, they build a kind of flattened spheroid, real "pile" of uranium and graphite.
+
 ### 2.4.1 Fuel and core, coolant, moderator
 
 ### 2.4.2 Steam generators, heat exchangers
